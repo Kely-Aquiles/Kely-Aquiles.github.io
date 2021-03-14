@@ -1,0 +1,8 @@
+#sidebar{
+    width: 50vw;
+    order: 2;
+}
+main{
+    width: 50vw;
+    order: 3;
+}

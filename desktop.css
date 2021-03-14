@@ -1,0 +1,12 @@
+header{
+    justify-content: space-between;
+}
+#titulo{
+    width: 50vw;
+}
+#sidebar{
+    width: 25%;
+}
+main{
+    width: 75%;
+}
