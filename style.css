@@ -21,6 +21,11 @@ header{
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#logo{
+    width: 60vw;
+    height: auto;
+    max-width: 70.8px;
+}
 #titulo{
     width: 100vw;
     height: auto;

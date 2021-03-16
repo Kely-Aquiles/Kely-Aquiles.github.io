@@ -1,6 +1,10 @@
 header{
     justify-content: space-between;
 }
+#logo{
+    width: 10vw;
+    margin: 0 0 0 10px;
+}
 #titulo{
     width: 50vw;
 }
