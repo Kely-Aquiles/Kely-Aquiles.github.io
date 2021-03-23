@@ -95,6 +95,7 @@ main{
     min-width: 288px;
     max-width: 900%;
     margin: 0 auto;
+    text-align: center;
 }
 .main-cuality-container .backgroundImg{
     width: 250px;
