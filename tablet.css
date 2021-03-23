@@ -10,5 +10,6 @@
     margin: 0 auto;
 }
 .images{
+    height: 400px;
     justify-content: center;
 }

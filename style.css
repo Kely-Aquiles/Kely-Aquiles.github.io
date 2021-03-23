@@ -292,6 +292,9 @@ main{
     color: var(--soft-orange);
 }
 .thank-img-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 70vh;
@@ -302,7 +305,7 @@ main{
     text-align: center;
 }
 .thank-img-container h2{
-    padding-top: 90px;
+    padding-bottom: 10px;
     font-size: 3.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -347,7 +350,7 @@ main{
     scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 200px;
     height: 200px;
     padding: 0 5px;
     margin: 50px 5px 0;
@@ -360,7 +363,7 @@ main{
     scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 200px;
     height: 200px;
     padding: 0 5px;
     margin: 50px 5px 0 60px;
@@ -373,7 +376,7 @@ main{
     scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 200px;
     height: 200px;
     padding: 0 5px;
     margin: 50px 60px 0 5px;
@@ -383,16 +386,19 @@ main{
 }
 .images-show img{
     width: 100%;
+    max-width: 180.75px;
     margin: 10px auto;
     border-radius: 15px;
 }
 .images-show-a img{
     width: 100%;
+    max-width: 180.75px;
     margin: 10px auto;
     border-radius: 15px;
 }
 .images-show-d img{
     width: 100%;
+    max-width: 180.75px;
     margin: 10px auto;
     border-radius: 15px;
 }
