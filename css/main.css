@@ -83,7 +83,7 @@ nav .images-link a:hover{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url('../assets/img/beautiful-sky-landscape-silhouette-moon.jpg');
+    background-image: url('https://i.postimg.cc/Nj4RNqWn/beautiful-sky-landscape-silhouette-moon.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,10 @@ footer p{
 .blogpost-nav-container{
     width: 100%;
     min-height: 150px;
-    background-color: var(--soft-pink);
+    background-image: url('https://i.postimg.cc/YSMb9xw5/beautiful-colorful-sunset.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 50px;
 }
