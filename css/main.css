@@ -298,7 +298,9 @@ footer p{
     background-image: url('https://i.postimg.cc/VkKHX1h4/foto3.jpg');
 }
 .dos{
-    background-image: url('https://i.postimg.cc/0NrXfFRv/foto4.jpgg');
+    /* esta imagen es la mia sin franela */
+    /* background-image: url('https://i.postimg.cc/0NrXfFRv/foto4.jpgg');*/
+    background-image: url('https://i.postimg.cc/jdC1J0zh/IMG-20210613-WA0002.jpg');
 }
 .tres{
     background-image: url('https://i.postimg.cc/cJj95h0n/foto5.jpg');
@@ -307,7 +309,9 @@ footer p{
     background-image: url('https://i.postimg.cc/fL924dRg/foto6.jpg');
 }
 .cinco{
-    background-image: url('https://i.postimg.cc/QCZ6jMBN/foto7.jpg');
+     /* esta imagen es la mia en boxer */
+    /* background-image: url('https://i.postimg.cc/QCZ6jMBN/foto7.jpg'); */
+    background-image: url('https://i.postimg.cc/X7hzfHL6/IMG-20210613-WA0004.jpg');
 }
 .seis{
     background-image: url('https://i.postimg.cc/cC7FCNYR/foto8.jpg');
