@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /*colores*/
+    --pink: #F85FC3;
+    --soft-pink: #f8a4db;
+    --blue: #4281FF;
+    --violet: #A420EB;
+    --soft-orange: #FFE9D5;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --gray: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #ffffff;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto mono', monospace;
+}
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(207.8deg, #4281FF 1.69%, #F85FC3 100%);
+}
+.header-color0, .header-color1, .header-color2, .header-color3, .header-color4{
+    background: linear-gradient(207.8deg, #104ffd 1.69%, #6ae651 100%);
+}
+.header-color5, .header-color6, .header-color7, .header-color8, .header-color9, .header-color10{
+    background: linear-gradient(207.8deg, #f8e806 1.69%, #1ba6dd 100%);
+}
+.header-color11, .header-color12, .header-color13, .header-color14, .header-color15{
+    background: linear-gradient(207.8deg, #e8f715 1.69%, #ec23e2 100%);
+}
+.header-color16, .header-color17, .header-color18, .header-color19{
+    background: linear-gradient(207.8deg, #f5c527 1.69%, #f12379 100%);
+}
+.header-color20, .header-color21, .header-color22, .header-color23{
+    background: linear-gradient(207.8deg, #150e61 1.69%, #faf9f9 100%);
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70px;
+    padding-top: 10px;
+}
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 80px;
+    margin-top: 5px;
+}
+nav .images-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+nav .images-link a{
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: 1px solid var(--soft-pink);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav .images-link a:hover{
+    background-color: var(--soft-pink);
+}
+nav .img5 a, nav .img6 a, nav .img7 a, nav .img8 a, nav .img9 a, nav .img10 a{
+    color: black;
+    border: 1px solid red;
+}
+nav .img5 a:hover, nav .img6 a:hover, nav .img7 a:hover, nav .img8 a:hover, nav .img9 a:hover, nav .img10 a:hover{
+    background-color: red;
+}
+nav .img11 a, nav .img12 a, nav .img13 a, nav .img14 a, nav .img15 a{
+    color: black;
+    border: 1px solid blue;
+}
+nav .img11 a:hover, nav .img12 a:hover, nav .img13 a:hover, nav .img14 a:hover, nav .img15 a:hover{
+    background-color: blue;
+    color: white;
+}
+nav .img16 a, nav .img17 a, nav .img18 a, nav .img19 a{
+    color: white;
+    border: 1px solid rgb(161, 9, 141);
+}
+nav .img16 a:hover, nav .img17 a:hover, nav .img18 a:hover, nav .img19 a:hover{
+    background-color: rgb(100, 8, 85);
+}
+nav .img20 a, nav .img21 a, nav .img22 a, nav .img23 a{
+    color: white;
+    border: 1px solid rgb(244, 248, 24);
+}
+nav .img20 a:hover, nav .img21 a:hover, nav .img22 a:hover, nav .img23 a:hover{
+    background-color: rgb(241, 245, 18);
+    color: black;
+}
+a .span-img{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://i.postimg.cc/tTLkM40j/imagenes.png');
+}
+a .span-men{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://image.flaticon.com/icons/png/512/124/124053.png');
+}
+.home-body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* https://i.postimg.cc/Ss1Y4VS6/at-sunset-time-on-the-tropical-beach-and-sea-with-coconut-palm-tree.jpg
+        https://i.postimg.cc/66Hf6Lj1/city-Lights.jpg
+        https://i.postimg.cc/Y0y6XMLw/flower.jpg
+        https://i.postimg.cc/d37kVd3z/landscape-of-morning-fog-and-mountains-with-hot-air-balloons-at-sunrise.jpg
+        https://i.postimg.cc/nVwqfVry/snow-mountain-with-aurora-borealis.jpg */
+}
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fondo0, .fondo1, .fondo2, .fondo3, .fondo4{
+    background-image: url('https://i.postimg.cc/nVwqfVry/snow-mountain-with-aurora-borealis.jpg');
+}
+.fondo5, .fondo6, .fondo7, .fondo8, .fondo9, .fondo10{
+    background-image: url('https://i.postimg.cc/d37kVd3z/landscape-of-morning-fog-and-mountains-with-hot-air-balloons-at-sunrise.jpg');
+   
+}
+.fondo11, .fondo12, .fondo13, .fondo14, .fondo15 {
+    background-image: url('https://i.postimg.cc/Y0y6XMLw/flower.jpg');
+}
+.fondo16, .fondo17, .fondo18, .fondo19 {
+    background-image: url('https://i.postimg.cc/Ss1Y4VS6/at-sunset-time-on-the-tropical-beach-and-sea-with-coconut-palm-tree.jpg');
+}
+.fondo20, .fondo21, .fondo22, .fondo23 {
+    background-image: url('https://i.postimg.cc/66Hf6Lj1/city-Lights.jpg');
+}
+.home-main div{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+.home-main-text{
+    font-family: 'Roboto mono', monospace;
+    font-size: 30px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+    color: var(--violet);
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+}
+.h1-5, .h1-6, .h1-7, .h1-8, .h1-9, .h1-10{
+    color: red;
+    -webkit-text-stroke: 1px white;
+}
+.h1-11, .h1-12, .h1-13, .h1-14, .h1-15{
+    color: rgb(35, 39, 245);
+    -webkit-text-stroke: 1px white;
+}
+.h1-16, .h1-17, .h1-18, .h1-19{
+    color: rgb(0, 217, 255);
+    -webkit-text-stroke: 1px white;
+}
+.h1-20, .h1-21, .h1-22, .h1-23{
+    color: rgb(248, 244, 4);
+    -webkit-text-stroke: 1px black;
+}
+.home-main-a{
+    width: 210px;
+    height: 70px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid var(--soft-pink);
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--warm-black);
+    background-color: var(--soft-orange);
+}
+.home-main-a:hover{
+    background-color: var(--soft-pink);
+}
+.pingu{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pingu0, .pingu1, .pingu2, .pingu3, .pingu4{
+    background-image: url('https://i.postimg.cc/5NWp5yq5/pinguino-4.png');
+}
+.pingu5, .pingu6, .pingu7, .pingu8, .pingu9, .pingu10{
+    background-image: url('https://i.postimg.cc/dVqBXffL/pinguino.png');
+}
+.pingu11, .pingu12, .pingu13, .pingu14, .pingu15{
+    background-image: url('https://i.postimg.cc/kGKs3P9t/pinguino-2.png');
+}
+.pingu16, .pingu17, .pingu18, .pingu19{
+    background-image: url('https://i.postimg.cc/430QYxx9/pinguino-3.png');
+}
+.pingu20, .pingu21, .pingu22, .pingu23{
+    background-image: url('https://i.postimg.cc/150BvSJk/pinguino-1.png');
+}
+/* apartir de aqui es todo de la pagina blog */
+.main-blog{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(207.8deg, #f194e2 1.69%, #42c7fc 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-blog p{
+    width: 80%;
+    margin-top: 40px;
+    text-align: justify;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.pingu-gif{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pingu-gif0{
+    background-image: url('https://media1.giphy.com/media/dwLIhmj1RU9A5wlm88/giphy.gif?cid=ecf05e47zddgxuum18jgtpnz29y45gkorcpfkjxe9y1pffrt&rid=giphy.gif&ct=g');
+}
+.pingu-gif1{
+    background-image: url('https://media3.giphy.com/media/5jlfH4UWOQq9G/200w.webp?cid=ecf05e47wde3p4p457is87cqiow1tjlqfh2e3fa54ok8r66v&rid=200w.webp&ct=g');
+}
+.pingu-gif2{
+    background-image: url('https://media2.giphy.com/media/KD1u7Iy7j8bQeoFlyH/200w.webp?cid=ecf05e47xj12to6h657mr0gawmce1kcbswvoz7z4rlwt49af&rid=200w.webp&ct=g');
+}
+.pingu-gif3{
+    background-image: url('https://i.postimg.cc/NFhsRCk7/73ab90c3-50f5-40ff-9d82-18efa2f1a4f3.jpg');
+    height: 500px;
+}
+
+
+/* apartir de aqui es todo de la pagina imagenes */
+
+/* secion de todas las imagenes que vana ir en el carrusel aleatorio */
+
+  .i0{background-image: url('https://i.postimg.cc/0NrXfFRv/foto4.jpg');}  
+  .i1{background-image: url('https://i.postimg.cc/VkKHX1h4/foto3.jpg');}
+  .i2{background-image: url('https://i.postimg.cc/cJj95h0n/foto5.jpg');}
+  .i3{background-image: url('https://i.postimg.cc/fL924dRg/foto6.jpg');}
+  .i4{background-image: url('https://i.postimg.cc/QCZ6jMBN/foto7.jpg');}
+  .i5{background-image: url('https://i.postimg.cc/cC7FCNYR/foto8.jpg');}
+  .i6{background-image: url('https://i.postimg.cc/XN1SJSSs/IMG-20210301-WA0039.jpg');}
+  .i7{background-image: url('https://i.postimg.cc/y8xchRkm/CUYMR8Z.jpg');}
+  .i8{background-image: url('https://i.postimg.cc/tC2FVkCR/cWs92ZP.jpg');}
+  .i9{background-image: url('https://i.postimg.cc/tCB4nn9c/foto10.jpg');}
+  .i10{background-image: url('https://i.postimg.cc/KvGYYDhL/foto9.jpg');}
+  .i11{background-image: url('https://i.postimg.cc/52rvstCZ/iMa1oPm.jpg');}
+  .i12{background-image: url('https://i.postimg.cc/tCXhTwbm/ImxSa6J.jpg');}
+  .i13{background-image: url('https://i.postimg.cc/5yZCYm6Z/Screenshot-20201115-151728.jpg');}
+  .i14{background-image: url('https://i.postimg.cc/yYy1SPgc/FB-IMG-1595369965068.jpg');}
+  .i15{background-image: url('https://i.postimg.cc/rsS8jGh6/FB-IMG-1596688744257.jpg');}
+  .i16{background-image: url('https://i.postimg.cc/Y2gqtktX/FB-IMG-1596688843439.jpg');}
+  .i17{background-image: url('https://i.postimg.cc/yYH6d5d7/FB-IMG-1596688887573.jpg');}
+  .i18{background-image: url('https://i.postimg.cc/0QSx5d16/FB-IMG-1596689082913.jpg');}
+  .i19{background-image: url('https://i.postimg.cc/ZqC42zfx/FB-IMG-1596689242555.jpg');}
+  .i20{background-image: url('https://i.postimg.cc/pL0PsLBd/FB-IMG-1596689359013.jpg');}
+  .i21{background-image: url('https://i.postimg.cc/Z5YTPdpg/FB-IMG-1596689943322.jpg');}
+  .i22{background-image: url('https://i.postimg.cc/9fKCjgK5/FB-IMG-1596690096865.jpg');}
+  .i23{background-image: url('https://i.postimg.cc/15BSz32K/FB-IMG-1596690840285.jpg');}
+  .i24{background-image: url('https://i.postimg.cc/WzPVdFs5/FB-IMG-1596690941682.jpg');}
+  .i25{background-image: url('https://i.postimg.cc/vHbMMVqB/FB-IMG-1596690945096.jpg');}
+  .i26{background-image: url('https://i.postimg.cc/qqXTyJR4/FB-IMG-1596690978989.jpg');}
+  .i27{background-image: url('https://i.postimg.cc/NG1YW4xS/FB-IMG-1596691006177.jpg');}
+  .i28{background-image: url('https://i.postimg.cc/Bnv0PGGf/FB-IMG-1596691038303.jpg');}
+  .i29{background-image: url('https://i.postimg.cc/k503H6R7/FB-IMG-1617244986302.jpg');}
+  .i30{background-image: url('https://i.postimg.cc/8znVhn1J/FB-IMG-1617245535079.jpg');}
+  .i31{background-image: url('https://i.postimg.cc/cJgGTMHD/FB-IMG-1617246040158.jpg');}
+  .i32{background-image: url('https://i.postimg.cc/HxbD1YbX/IMG-20201101-WA0047.jpg');}
+  .i33{background-image: url('https://i.postimg.cc/Y0kcp5xV/IMG-20201102-WA0001.jpg');}
+  .i34{background-image: url('https://i.postimg.cc/MHYCX9PG/IMG-20201102-WA0002.jpg');}
+  .i35{background-image: url('https://i.postimg.cc/NG7qN0sw/IMG-20201102-WA0003.jpg');}
+  .i36{background-image: url('https://i.postimg.cc/hPDFNqvQ/IMG-20201102-WA0004.jpg');}
+  .i37{background-image: url('https://i.postimg.cc/02VgsHKW/IMG-20201102-WA0005.jpg');}
+  .i38{background-image: url('https://i.postimg.cc/zGvsXSnJ/IMG-20201102-WA0006.jpg');}
+  .i39{background-image: url('https://i.postimg.cc/13dLgnHD/IMG-20201102-WA0008.jpg');}
+  .i40{background-image: url('https://i.postimg.cc/mrFK7LXJ/IMG-20201102-WA0009.jpg');}
+  .i41{background-image: url('https://i.postimg.cc/XJfhD20g/IMG-20201102-WA0010.jpg');}
+  .i42{background-image: url('https://i.postimg.cc/ZnjQJCnB/IMG-20201102-WA0011.jpg');}
+  .i43{background-image: url('https://i.postimg.cc/1th2Hkbt/IMG-20201102-WA0012.jpg');}
+  .i44{background-image: url('https://i.postimg.cc/3rZVXb18/IMG-20201102-WA0013.jpg');}
+  .i45{background-image: url('https://i.postimg.cc/J0RgwbrC/IMG-20201102-WA0017.jpg');}
+  .i46{background-image: url('https://i.postimg.cc/WbbKX6YM/IMG-20201102-WA0018.jpg');}
+  .i47{background-image: url('https://i.postimg.cc/wj1rdxpM/IMG-20201102-WA0019.jpg');}
+  .i48{background-image: url('https://i.postimg.cc/R0fbNPqz/IMG-20201102-WA0020.jpg');}
+  .i49{background-image: url('https://i.postimg.cc/Tw6NmrW5/IMG-20201102-WA0032.jpg');}
+  .i50{background-image: url('https://i.postimg.cc/X7JHwNXL/IMG-20201102-WA0034.jpg');}
+  .i51{background-image: url('https://i.postimg.cc/bNC5MD44/IMG-20201012-201944250.jpg');}
+  .i52{background-image: url('https://i.postimg.cc/G2x7jHk7/Screenshot-20200720-161715.jpg');}
+  .i53{background-image: url('https://i.postimg.cc/XqN214LV/Screenshot-20200723-021258.jpg');}
+  .i54{background-image: url('https://i.postimg.cc/3NLtPVf2/Screenshot-20200817-003954.jpg');}
+  .i55{background-image: url('https://i.postimg.cc/xjgpJNjq/Screenshot-20200819-232107.jpg');}
+  .i56{background-image: url('https://i.postimg.cc/nh93Pd4Q/Screenshot-20200827-215659.jpg');}
+  .i57{background-image: url('https://i.postimg.cc/mrxmfQjp/Screenshot-20200827-220118.jpg');}
+  .i58{background-image: url('https://i.postimg.cc/YS1bphyr/Screenshot-20200907-002632.jpg');}
+  .i59{background-image: url('https://i.postimg.cc/sXsK1stp/Screenshot-20200912-225714.jpg');}
+  .i60{background-image: url('https://i.postimg.cc/hv30Cxhr/Screenshot-20200924-133112.jpg');}
+  .i61{background-image: url('https://i.postimg.cc/ZKCHWfDD/Screenshot-20200924-133301.jpg');}
+  .i62{background-image: url('https://i.postimg.cc/52zm3XJB/Screenshot-20200924-133308.jpg');}
+  .i63{background-image: url('https://i.postimg.cc/dQWntMny/Screenshot-20200926-191840.jpg');}
+  .i64{background-image: url('https://i.postimg.cc/5NT3Lwh9/Screenshot-20201006-203505.jpg');}
+  .i65{background-image: url('https://i.postimg.cc/VNcWHzs3/Screenshot-20201011-162103.jpg');}
+  .i66{background-image: url('https://i.postimg.cc/rpCCB7Kz/Screenshot-20201011-162109.jpg');}
+  .i67{background-image: url('https://i.postimg.cc/XJjc4xCL/Screenshot-20201011-162119.jpg');}
+  .i68{background-image: url('https://i.postimg.cc/G2XP2YPC/Screenshot-20201028-132332.jpg');}
+  .i69{background-image: url('https://i.postimg.cc/J0tNBnKB/Screenshot-20201101-162223.jpg');}
+  .i70{background-image: url('https://i.postimg.cc/QCPpg3nY/Screenshot-20201101-162246.jpg');}
+  .i71{background-image: url('https://i.postimg.cc/BZwcfTQ5/Screenshot-20201101-162405.jpg');}
+  .i72{background-image: url('https://i.postimg.cc/DyJQvS89/Screenshot-20201102-213321.jpg');}
+  .i73{background-image: url('https://i.postimg.cc/SNB6Jm9J/Screenshot-20201102-213510.jpg');}
+  .i74{background-image: url('https://i.postimg.cc/P51mD0bK/Screenshot-20201102-213521.jpg');}
+  .i75{background-image: url('https://i.postimg.cc/QMscJS0D/Screenshot-20201115-145831.jpg');}
+  .i76{background-image: url('https://i.postimg.cc/vmzfq9NV/Screenshot-20201115-145839.jpg');}
+  .i77{background-image: url('https://i.postimg.cc/hjZxgng4/Screenshot-20201115-151056.jpg');}
+  .i78{background-image: url('https://i.postimg.cc/MTpRhTCr/Screenshot-20201115-151158.jpg');}
+  .i79{background-image: url('https://i.postimg.cc/4yKcx0N6/Screenshot-20201115-151222.jpg');}
+  .i80{background-image: url('https://i.postimg.cc/FR0pQn77/IMG-20190129-WA0090.jpg');}
+  .i81{background-image: url('https://i.postimg.cc/wBC2ZdxC/IMG-20190129-WA0167.jpg');}
+  .i82{background-image: url('https://i.postimg.cc/ZnZcYFdj/IMG-20190129-WA0173.jpg');}
+  .i83{background-image: url('https://i.postimg.cc/bNmT8nNH/IMG-20190129-WA0195.jpg');}
+  .i84{background-image: url('https://i.postimg.cc/Yqr3JRkC/IMG-20190129-WA0202.jpg');}
+  .i85{background-image: url('https://i.postimg.cc/rsJ9D0GT/IMG-20190129-WA0425.jpg');}
+  .i86{background-image: url('https://i.postimg.cc/fWjC2FGP/IMG-20190129-WA0451.jpg');}
+  .i87{background-image: url('https://i.postimg.cc/134Kzz8x/IMG-20190129-WA0481.jpg');}
+  .i88{background-image: url('https://i.postimg.cc/K8VD3yT1/IMG-20190129-WA0503.jpg');}
+  .i89{background-image: url('https://i.postimg.cc/B65TzLVF/IMG-20190129-WA0506.jpg');}
+  .i90{background-image: url('https://i.postimg.cc/MGQbyr0d/IMG-20190226-WA0002.jpg');}
+  .i91{background-image: url('https://i.postimg.cc/W3cmS6Xj/IMG-20190425-WA0024.jpg');}
+  .i92{background-image: url('https://i.postimg.cc/8zFhSnYN/IMG-20190501-WA0001.jpg');}
+  .i93{background-image: url('https://i.postimg.cc/zvJCYzsc/IMG-20190608-WA0318.jpg');}
+  .i94{background-image: url('https://i.postimg.cc/SRDWS0qN/IMG-20190610-WA0004.jpg');}
+  .i95{background-image: url('https://i.postimg.cc/9XpPt9T5/IMG-20190615-WA0135.jpg');}
+  .i96{background-image: url('https://i.postimg.cc/wTjXWBct/IMG-20190616-WA0023.jpg');}
+  .i97{background-image: url('https://i.postimg.cc/NfC1Zwpd/IMG-20190617-WA0016.jpg');}
+  .i98{background-image: url('https://i.postimg.cc/JhZZyHmF/IMG-20190617-WA0017.jpg');}
+  .i99{background-image: url('https://i.postimg.cc/13LD5rx6/IMG-20190621-WA0039.jpg');}
+  .i100{background-image: url('https://i.postimg.cc/mD4M7Zgg/IMG-20190626-WA0004.jpg');}
+  .i101{background-image: url('https://i.postimg.cc/sXJWmFM9/IMG-20190627-WA0019.jpg');}
+  .i102{background-image: url('https://i.postimg.cc/ZnKdDf3k/IMG-20190701-WA0122.jpg');}
+  .i103{background-image: url('https://i.postimg.cc/44BthgkX/IMG-20190701-WA0128.jpg');}
+  .i104{background-image: url('https://i.postimg.cc/Zn7dkrFW/IMG-20190717-WA0033.jpg');}
+  .i105{background-image: url('https://i.postimg.cc/MKHB7FqV/IMG-20190723-WA0024.jpg');}
+  .i106{background-image: url('https://i.postimg.cc/pLnn759d/IMG-20190803-WA0030.jpg');}
+  .i107{background-image: url('https://i.postimg.cc/wB8sdxJQ/IMG-20190807-WA0045.jpg');}
+  .i108{background-image: url('https://i.postimg.cc/J4FkP5zg/IMG-20190818-WA0007.jpg');}
+  .i109{background-image: url('https://i.postimg.cc/d02ZQMjP/IMG-20190822-WA0038.jpg');}
+  .i110{background-image: url('https://i.postimg.cc/zBqbVdxL/IMG-20190919-WA0062.jpg');}
+  .i111{background-image: url('https://i.postimg.cc/L4CY83LX/IMG-20191021-WA0000.jpg');}
+  .i112{background-image: url('https://i.postimg.cc/Hk5V3GKc/IMG-20191021-WA0003.jpg');}
+  .i113{background-image: url('https://i.postimg.cc/C1JZDj2c/IMG-20191101-WA0025.jpg');}
+  .i114{background-image: url('https://i.postimg.cc/zvBykyZ8/IMG-20191108-WA0031.jpg');}
+  .i115{background-image: url('https://i.postimg.cc/RhDNpv4f/IMG-20191117-WA0017.jpg');}
+  .i116{background-image: url('https://i.postimg.cc/Kv1Kk3D5/IMG-20191213-WA0012.jpg');}
+  .i117{background-image: url('https://i.postimg.cc/dtgh8QWc/IMG-20191218-WA0016.jpg');}
+  .i118{background-image: url('https://i.postimg.cc/CKgdQPTv/IMG-20191218-WA0019.jpg');}
+  .i119{background-image: url('https://i.postimg.cc/xd3qDv99/IMG-20191218-WA0027.jpg');}
+  .i120{background-image: url('https://i.postimg.cc/rmys8Dpx/IMG-20191222-WA0022.jpg');}
+  .i121{background-image: url('https://i.postimg.cc/Qt6tVjBP/IMG-20191222-WA0023.jpg');}
+  .i122{background-image: url('https://i.postimg.cc/Y0ZCf8zz/IMG-20191224-WA0037.jpg');}
+  .i123{background-image: url('https://i.postimg.cc/Wzh4kxg4/IMG-20191229-WA0000.jpg');}
+  .i124{background-image: url('https://i.postimg.cc/05Bjs21K/IMG-20191231-WA0033.jpg');}
+  .i125{background-image: url('https://i.postimg.cc/3J0RJ53S/IMG-20191231-WA0034.jpg');}
+  .i126{background-image: url('https://i.postimg.cc/L8dsJCXH/IMG-20200101-WA0014.jpg');}
+  .i127{background-image: url('https://i.postimg.cc/FKpFnhxR/IMG-20200105-WA0020.jpg');}
+  .i128{background-image: url('https://i.postimg.cc/pdRXZmz4/IMG-20200107-WA0038.jpg');}
+  .i129{background-image: url('https://i.postimg.cc/Qdpd1Q9c/IMG-20200110-WA0000.jpg');}
+  .i130{background-image: url('https://i.postimg.cc/fLgzD5pQ/IMG-20200117-WA0053.jpg');}
+  .i131{background-image: url('https://i.postimg.cc/fWpzP2Yx/IMG-20200123-WA0047.jpg');}
+  .i132{background-image: url('https://i.postimg.cc/fLbzG1Hv/IMG-20200207-WA0042.jpg');}
+  .i133{background-image: url('https://i.postimg.cc/x8J0CMVJ/IMG-20200306-WA0006.jpg');}
+  .i134{background-image: url('https://i.postimg.cc/htPKzknR/Screenshot-20200719-181931.jpg');}
+  .i135{background-image: url('https://i.postimg.cc/65ZWxrhF/IMG-20200409-WA0005.jpg');}
+  .i136{background-image: url('https://i.postimg.cc/BnGqSjYb/IMG-20200409-WA0007.jpg');}
+  .i137{background-image: url('https://i.postimg.cc/CxHwzwXN/IMG-20200430-WA0039.jpg');}
+  .i138{background-image: url('https://i.postimg.cc/8CpNvqVV/IMG-20200512-WA0033.jpg');}
+  .i139{background-image: url('https://i.postimg.cc/CKcYsmFn/IMG-20200517-WA0015.jpg');}
+  .i140{background-image: url('https://i.postimg.cc/RFqmsKFs/IMG-20200526-WA0036.jpg');}
+  .i141{background-image: url('https://i.postimg.cc/fkQhRPvp/IMG-20200528-WA0043.jpg');}
+  .i142{background-image: url('https://i.postimg.cc/cHjSVCts/IMG-20200601-WA0014.jpg');}
+  .i143{background-image: url('https://i.postimg.cc/qq3T0r22/IMG-20200610-WA0018.jpg');}
+  .i144{background-image: url('https://i.postimg.cc/tRZZ7V5N/IMG-20200611-WA0034.jpg');}
+  .i145{background-image: url('https://i.postimg.cc/65C8fJF7/IMG-20200612-WA0040.jpg');}
+  .i146{background-image: url('https://i.postimg.cc/1RkgF57h/IMG-20200617-WA0044.jpg');}
+  .i147{background-image: url('https://i.postimg.cc/6p0TFVWt/IMG-20200624-WA0040.jpg');}
+  .i148{background-image: url('https://i.postimg.cc/SxqJZ1pg/IMG-20200624-WA0041.jpg');}
+  .i149{background-image: url('https://i.postimg.cc/mDcDc0Qg/IMG-20200624-WA0046.jpg');}
+  .i150{background-image: url('https://i.postimg.cc/Ls8hSq5f/IMG-20200625-WA0055.jpg');}
+  .i151{background-image: url('https://i.postimg.cc/85qCLtHB/IMG-20200626-WA0059.jpg');}
+  .i152{background-image: url('https://i.postimg.cc/rpZsw8RH/IMG-20200703-WA0015.jpg');}
+  .i153{background-image: url('https://i.postimg.cc/przLCzcN/IMG-20200703-WA0083.jpg');}
+  .i154{background-image: url('https://i.postimg.cc/NGHFQvsN/IMG-20200704-WA0073.jpg');}
+  .i155{background-image: url('https://i.postimg.cc/151tt74y/IMG-20200706-WA0027.jpg');}
+  .i156{background-image: url('https://i.postimg.cc/tCdgVdVW/IMG-20200706-WA0092.jpg');}
+  .i157{background-image: url('https://i.postimg.cc/zGJGwLnM/IMG-20200707-WA0041.jpg');}
+  .i158{background-image: url('https://i.postimg.cc/R06Gg0m1/IMG-20200714-163404111.jpg');}
+  .i159{background-image: url('https://i.postimg.cc/YSvk8QjX/Screenshot-20200120-105503.png');}
+  .i160{background-image: url('https://i.postimg.cc/g07cPNfF/Screenshot-20200125-000421.png');}
+  .i161{background-image: url('https://i.postimg.cc/N0FGVWCk/Screenshot-20200207-164050.png');}
+  .i162{background-image: url('https://i.postimg.cc/NftsYyPM/Screenshot-20200207-164156.png');}
+  .i163{background-image: url('https://i.postimg.cc/MH2WnX69/Screenshot-20200316-000209.png');}
+  .i164{background-image: url('https://i.postimg.cc/NMrsGRcy/Screenshot-20200326-221137.png');}
+  .i165{background-image: url('https://i.postimg.cc/yYTVNVwT/Screenshot-20200415-153024.png');}
+  .i166{background-image: url('https://i.postimg.cc/rwnMSfy0/Screenshot-20200415-153143.png');}
+  .i167{background-image: url('https://i.postimg.cc/brxqk8dp/Screenshot-20200718-201800.jpg');}
+  .i168{background-image: url('https://i.postimg.cc/c1wxV7h2/Screenshot-20200718-232934.jpg');}
+
+  /* aqui finalizan las imagenes del carrusel aleatorio */
+
+    .main-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(207.8deg, #f194e2 1.69%, #42c7fc 100%);
+        padding-top: 15px;
+    }
+    .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .content div{
+    width: 300px;
+    height: 350px;
+    margin-top: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }

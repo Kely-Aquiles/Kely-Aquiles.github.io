@@ -1,0 +1,38 @@
+@media (min-width: 650px){
+.main-blog{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.piropo{
+    width: 40vw;
+    min-width: 350px;
+    max-width: 500px;
+}
+.content{
+     flex-direction: row;
+     width: 640px;
+ }
+.content div{
+    margin-left: 20px;
+    -webkit-transition: 450ms all;
+    transition: 450ms all;
+    -webkit-transform-origin: center center;
+        transform-origin: center center;
+ }
+
+.content div:hover ~ .content div {
+    -webkit-transform: translate3d(100px, 0, 0);
+            transform: translate3d(100px, 0, 0);
+  }
+.content div:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+}
+@media (min-width: 970px){
+    .content{
+        flex-direction: row;
+        width: 960px;
+    }
+   }
