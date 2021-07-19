@@ -1,6 +1,6 @@
 function cambiar_fondo_con_class(){
     d = new Date();
-    t = d.getHours() +2;
+    t = d.getHours() + 0;
     document.getElementById('main').className ='home-main fondo'+t;
     document.getElementById('home-header').className ='header-color'+t;
     document.getElementById('pingu').className='pingu pingu'+t;
