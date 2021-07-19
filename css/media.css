@@ -1,4 +1,7 @@
 @media (min-width: 650px){
+.a20, .a21, .a22, .a23{
+    margin-top: 80px;
+}
 .main-blog{
     flex-direction: row;
     flex-wrap: wrap;
